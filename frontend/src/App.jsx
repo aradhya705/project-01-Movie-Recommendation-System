@@ -18,9 +18,9 @@ function App() {
       setLoading(true);
       setSearched(false);
 
-      const response = await fetch(
-        `http://localhost:8000/recommend/${movie}`
-      );
+     const response = await fetch(
+`https://movie-recommendation-backend.onrender.com/recommend/${movie}`
+);
 
       const data = await response.json();
 
