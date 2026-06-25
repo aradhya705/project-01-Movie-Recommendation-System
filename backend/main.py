@@ -4,12 +4,13 @@ import requests
 
 app=FastAPI()
 
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["*"],   
     allow_credentials=True,
     allow_methods=["*"],
-    allow_headers=["*"]
+    allow_headers=["*"],
 )
 
 API_KEY="ee36d5a0bbc1944a8656c055f787be19"
